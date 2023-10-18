@@ -3,6 +3,8 @@ package com.pesos.demo.controladores;
 
 import com.pesos.demo.entidades.Autor;
 import com.pesos.demo.servicios.AutorServiceImpl;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,4 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "api/v1/autores")
 
 public class AutorController extends BaseControllerImpl<Autor, AutorServiceImpl> {
+    @Override
+    public ResponseEntity<?> getAll(Pageable pageable) {
+        return null;
+    }
 }

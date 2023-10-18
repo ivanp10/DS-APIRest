@@ -30,4 +30,8 @@ public class PersonaController extends BaseControllerImpl<Persona, PersonaServic
         }
     }
 
+    @Override
+    public ResponseEntity<?> getAll(Pageable pageable) {
+        return null;
+    }
 }
